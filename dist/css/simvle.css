@@ -1,0 +1,126 @@
+/**
+ * © 2021 SIMVLE THEME V0.1.0-beta.1 BY FRASTYLE FRAMEWORK. Licensed under MIT License. Author: Bagas Nur <hello.bagasnur@gmail.com> (https://bagasnur.my.id). © 2020-2021 Frastyle Framework. Made in Indonesia and licensed under MIT License. Author: Bagas Nur <hello.bagasnur@gmail.com> (https://bagasnur.my.id). Generated on 10 2021
+ */
+
+:root {
+	--primary: #3c71dd;
+	--space-button: 0.75em 2.5em;
+	--corner-button: 0.5em;
+	--gap-button: 0.5em;
+	--corner-code: 1em;
+	--corner-input: 0.5em;
+	--focus-input: 0 0 2px 2px var(--primary);
+	--border-input: 1px solid var(--light-5);
+	--corner-quote: 0.5em;
+	--corner-alert: 0.5em;
+	--corner-badge: 2em;
+	--space-card: 1.5em 2em;
+	--corner-card: 1em;
+}
+
+button,
+[class*=button],
+input[type=button],
+input[type=reset],
+input[type=submit] {
+	transition: 0.1s;
+}
+
+button:hover,
+[class*=button]:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+	box-shadow: var(--shadow-small);
+}
+
+button:disabled:hover,
+button.disabled:hover,
+[class*=button]:disabled:hover,
+[class*=button].disabled:hover,
+input[type=button]:disabled:hover,
+input[type=button].disabled:hover,
+input[type=reset]:disabled:hover,
+input[type=reset].disabled:hover,
+input[type=submit]:disabled:hover,
+input[type=submit].disabled:hover {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	box-shadow: none;
+}
+
+.button-primary {
+	--bg-button: var(--primary);
+	--bg-button-hover: hsl(220, 81%, 60%);
+	--text-button: white;
+}
+
+.button-secondary {
+	--bg-button: var(--white);
+	--border-button: 1px solid var(--light-3);
+	--border-button-hover: 1px solid var(--light-5);
+}
+
+dd {
+	border-left: 2px solid var(--light-2);
+}
+
+blockquote {
+	border-right: 4px solid var(--light-2);
+	border-left: 4px solid var(--light-2);
+}
+
+.alert-primary {
+	--bg-alert: hsl(220, 70%, 95%);
+	--text-alert: var(--primary);
+	--border-alert: solid var(--primary);
+	border-width: 0 0 0 4px;
+}
+
+.alert-secondary {
+	--bg-alert: hsl(0, 0%, 95%);
+	--text-alert: var(--dark);
+	--border-alert: solid var(--dark-4);
+	border-width: 0 0 0 4px;
+}
+
+.alert-success {
+	--border-alert: solid var(--success);
+	border-width: 0 0 0 4px;
+}
+
+.alert-danger {
+	--border-alert: solid var(--danger);
+	border-width: 0 0 0 4px;
+}
+
+.alert-warning {
+	--border-alert: solid var(--warning);
+	border-width: 0 0 0 4px;
+}
+
+.alert-info {
+	--border-alert: solid var(--info);
+	border-width: 0 0 0 4px;
+}
+
+.badge-primary {
+	--bg-badge: var(--primary);
+}
+
+.badge-secondary {
+	--bg-badge: var(--dark-4);
+}
+
+.card-primary {
+	--bg-card: hsl(220, 70%, 95%);
+	--border-card: 1px solid var(--primary);
+}
+
+.card-secondary {
+	--bg-card: hsl(0, 0%, 95%);
+	--border-card: 1px solid var(--black);
+}
+

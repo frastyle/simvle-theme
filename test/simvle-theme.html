@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SIMVLE Theme | Frastyle CSS Framework</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/frastyle-css/dist/css/frastyle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../dist/css/simvle.min.css"
+		/>
+		<link
+            rel="stylesheet"
+            href="./assets/css/style.css"
+        />
+	</head>
+	<body>
+		<nav id="navbar" class="navbar">
+			<div class="container">
+				<a href="/">
+					<img
+						src="./assets/img/frastyle-logo.png"
+						alt="Logo Frastyle CSS Framework"
+						class="logo"
+					/>
+				</a>
+			</div>
+		</nav>
+		<div class="header gradient-blue pt-6 pt-m-9">
+			<div class="container white">
+				<h1 class="bold text-center m-0">Tema SIMVLE</h1>
+				<div class="row justify-center">
+					<span class="box-8 text-center white m-0">
+                        Tambahkan kode berikut dibawah CDN framework pada
+						bagian &lt;header&gt; untuk dapat aplikasikan
+						tema.
+                    </span>
+<pre class="box-8 codeSnap my-3 shadow">
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simvle-theme/dist/css/simvle.min.css"&gt;
+</pre>
+				</div>
+			</div>
+		</div>
+		<div class="download-pane p-1">
+			<span class="mr-2">
+                Tidak ingin menggunakan tema melalui CDN? Unduh tema-nya disini
+				<b>>>></b>
+            </span>
+			<a href="https://github.com/frastyle/simvle-theme/releases/download/v0.1.0-beta.1/simvle-theme-by-frastyle-v0.1.0-beta.1.zip" target="_blank" class="button-success">Download</a>
+		</div>
+		<div class="container my-4">
+			<!-- TIPOGRAFI -->
+			<h3 class="text-center mt-3">Tipografi</h3>
+			<!-- Heading -->
+			<div class="row flex-column items-center text-center">
+				<div class="box-m-4">
+					<h1>Hai Judul H1</h1>
+				</div>
+				<div class="box-m-4">
+					<h2>Hai Judul H2</h2>
+				</div>
+				<div class="box-m-4">
+					<h3>Hai Judul H3</h3>
+				</div>
+				<div class="box-m-4">
+					<h4>Hai Judul H4</h4>
+				</div>
+				<div class="box-m-4">
+					<h5>Hai Judul H5</h5>
+				</div>
+				<div class="box-m-4">
+					<h6>Hai Judul H6</h6>
+				</div>
+				<div class="box-m-4">
+					<mark>Marked</mark> teks.
+					<span class="mark">Marked class</span> teks.
+				</div>
+			</div>
+			<div class="row justify-center">
+<pre class="box-8 d-flex self-center codeSnap mt-2">
+//  Menggunakan elemen html
+&lt;mark&gt;Marked&lt;/mark&gt; teks.
+//  Menggunakan class
+&lt;span class="maek"&gt;Marked class&lt;/span&gt; teks.
+</pre>
+			</div>
+			<!-- TOMBOL -->
+			<h3 class="text-center mt-3">Tombol</h3>
+			<div class="row flex-column items-center">
+				<div class="box-10 d-flex justify-center mb-0">
+					<button>Default</button>
+					<button class="disabled">Disabled</button>
+					<button class="button-primary">Primary</button>
+					<button class="button-secondary">Secondary</button>
+				</div>
+				<div class="box-10 d-flex justify-center mt-0">
+					<button class="button-success">Success</button>
+					<button class="button-warning">Warning</button>
+					<button class="button-danger">Danger</button>
+					<button class="button-info">Info</button>
+				</div>
+			</div>
+			<div class="row justify-center">
+<pre class="box-8 d-flex self-center codeSnap mt-2">
+//  Menggunakan class
+&lt;button class="button-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="button-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="button-success"&gt;Success&lt;/button&gt;
+&lt;button class="button-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="button-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="button-info"&gt;Info&lt;/button&gt;
+</pre>
+			</div>
+			<!-- KODE -->
+			<h3 class="text-center mt-3">Kode & Preformat</h3>
+			<div class="row flex-column items-center">
+				<span class="box-5 text-center mb-0">
+					Elemen kode <code>html</code>.
+				</span>
+				<div class="box-5 mb-0">
+<pre>
+let x = true;
+if (x) {
+    console.log('Yeey...');
+} else {
+    console.log('Nooo...');
+}
+</pre>
+				</div>
+			</div>
+			<h3 class="text-center mt-3">Formulir</h3>
+			<div class="row flex-column items-center">
+				<div class="box-10 d-flex justify-center mb-0">
+					<div class="row" style="width: 100%">
+						<div class="box-3">
+							<!-- Input Text -->
+							<input
+								type="text"
+								name="input-text"
+								value="Lorem ipsum dolor sit amet."
+							/>
+						</div>
+						<div class="box-3">
+							<!-- Input Text Invalid -->
+							<input
+								type="text"
+								name="input-text"
+								class="invalid"
+								value="Lorem ipsum dolor sit amet."
+							/>
+						</div>
+						<div class="box-3">
+							<!-- Input Text Valid -->
+							<input
+								type="text"
+								name="input-text"
+								class="valid"
+								value="Lorem ipsum dolor sit amet."
+							/>
+						</div>
+						<div class="box-3">
+							<!-- Input Text Disabled -->
+							<input
+								type="text"
+								name="input-text"
+								class="input"
+								value="Lorem ipsum dolor sit amet."
+								disabled
+							/>
+						</div>
+					</div>
+					<div class="row" style="width: 100%">
+						<div class="box-3">
+							<!-- Select -->
+							<select>
+								<option>Sumatera</option>
+								<option>Jawa</option>
+								<option>Kalimantan</option>
+								<option>Sulawesi</option>
+								<option>Papua</option>
+							</select>
+						</div>
+						<div class="box-3">
+							<!-- Select Invalid -->
+							<select class="invalid">
+								<option>Wayang Kulit</option>
+								<option>Wayang Golek</option>
+							</select>
+						</div>
+						<div class="box-3">
+							<!-- Select Invalid -->
+							<select class="valid">
+								<option>Wayang Kulit</option>
+								<option>Wayang Golek</option>
+							</select>
+						</div>
+						<div class="box-3">
+							<!-- Select Disabled -->
+							<select disabled>
+								<option>Wayang Kulit</option>
+								<option>Wayang Golek</option>
+							</select>
+						</div>
+					</div>
+					<div class="row" style="width: 100%">
+						<div class="box-4">
+							<!-- Checkbox -->
+							<input
+								type="checkbox"
+								name="input-checkbox"
+								id="input-checkbox"
+							/>
+							<label for="input-checkbox">
+                                This is checkbox
+                            </label>
+						</div>
+						<div class="box-4">
+							<input
+								type="checkbox"
+								name="input-checkbox-invalid"
+								id="input-checkbox-invalid"
+								class="invalid"
+							/>
+							<label for="input-checkbox-invalid">
+                                This is invalid
+                            </label>
+						</div>
+						<div class="box-4">
+							<input
+								type="checkbox"
+								name="input-checkbox-valid"
+								id="input-checkbox-valid"
+								class="valid"
+								checked
+							/>
+							<label for="input-checkbox-valid">
+                                This is valid
+                            </label>
+						</div>
+					</div>
+					<div class="row" style="width: 100%">
+						<div class="box-4">
+							<input
+								type="checkbox"
+								name="input-checkbox"
+								id="input-checkbox"
+								checked
+							/>
+							<label for="input-checkbox">
+                                This is checked
+                            </label>
+						</div>
+						<div class="box-4">
+							<input
+								type="checkbox"
+								name="input-checkbox-disabled"
+								id="input-checkbox-disabled"
+								disabled
+							/>
+							<label for="input-checkbox-disabled">
+                                This is disabled checkbox
+                            </label>
+						</div>
+						<div class="box-4">
+							<input
+								type="checkbox"
+								name="input-checkbox-disabled"
+								id="input-checkbox-disabled"
+								checked
+								disabled
+							/>
+							<label for="input-checkbox-disabled">
+                                This is disabled checked
+                            </label>
+						</div>
+					</div>
+					<div class="row" style="width: 100%">
+						<!-- Radio Button -->
+						<div class="box-4">
+							<input
+								type="radio"
+								name="input-radio"
+								id="input-radio"
+								value="Not checked"
+							/>
+							<label for="input-radio">
+                                This is radio
+                            </label>
+						</div>
+						<div class="box-4">
+							<input
+								type="radio"
+								name="input-radio-invalid"
+								id="input-radio-invalid"
+								value="Not Checked Invalid"
+								class="invalid"
+							/>
+							<label for="input-radio-invalid">
+                                This is invalid
+                            </label>
+						</div>
+						<div class="box-4">
+							<input
+								type="radio"
+								name="input-radio-invalid"
+								id="input-radio-invalid"
+								value="Checked"
+								class="valid"
+								checked
+							/>
+							<label for="input-radio-invalid">
+                                This is valid
+                            </label>
+						</div>
+					</div>
+					<div class="row" style="width: 100%">
+						<div class="box-4">
+							<input
+								type="radio"
+								name="input-radio"
+								id="input-radio-checked"
+								value="Checked"
+								checked
+							/>
+							<label for="input-radio-checked">
+                                This is radio
+                            </label>
+						</div>
+						<div class="box-4">
+							<input
+								type="radio"
+								name="input-radio-disabled"
+								id="input-radio-disabled"
+								disabled
+							/>
+							<label for="input-radio-disabled-checked">
+                                This is disabled radio
+                            </label>
+						</div>
+						<div class="box-4">
+							<input
+								type="radio"
+								name="input-radio-disabled"
+								id="input-radio-disabled-checked"
+								checked
+								disabled
+							/>
+							<label for="input-radio-disabled-checked">
+                                This is disabled radio
+                            </label>
+						</div>
+					</div>
+					<div class="row" style="width: 100%">
+						<div class="box-6">
+							<textarea
+								name="text-area"
+								id="text-area"
+								wrap="soft"
+								cols="30"
+								rows="4"
+							>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus soluta vero natus atque ipsum voluptatum consequuntur, adipisci doloremque libero pariatur. Accusamus earum modi vero optio!
+                            </textarea>
+						</div>
+						<div class="box-6">
+							<input
+								type="color"
+								name="input-color"
+								id="input-color"
+								class="input"
+								value="#3c71dd"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- LIST -->
+			<h3 class="text-center mt-3">Listing</h3>
+			<div class="row justify-center">
+				<div class="box-3">
+					Ordered List
+					<ol>
+						<li>Lorem, ipsum dolor.
+							<ol type="I">
+								<li>Child List.
+									<ol type="i">
+										<li>Grand Child List.
+											<ol type="1">
+												<li>Super Grand Child List</li>
+												<li>Lorem, ipsum dolor.</li>
+											</ol>
+										</li>
+										<li>Lorem, ipsum dolor.</li>
+									</ol>
+								</li>
+								<li>Lorem, ipsum dolor.</li>
+							</ol>
+						</li>
+						<li>Lorem, ipsum dolor.</li>
+					</ol>
+					Ordered List
+					<ol type="A">
+						<li>Lorem, ipsum dolor.
+							<ol type="a">
+								<li>Child List.</li>
+								<li>Lorem, ipsum dolor.</li>
+							</ol>
+						</li>
+						<li>Lorem, ipsum dolor.</li>
+					</ol>
+				</div>
+				<div class="box-3">
+					Unordered List
+					<ul>
+						<li>Lorem, ipsum dolor.
+							<ul>
+								<li>Child List.
+									<ul>
+										<li>Grand Child List.
+											<ul>
+												<li>Super Grand Child List</li>
+												<li>Lorem, ipsum dolor.</li>
+											</ul>
+										</li>
+										<li>Lorem, ipsum dolor.</li>
+									</ul>
+								</li>
+								<li>Lorem, ipsum dolor.</li>
+							</ul>
+						</li>
+						<li>Lorem, ipsum dolor.</li>
+					</ul>
+					Unordered List
+					<ul type="square">
+						<li>Lorem, ipsum dolor.
+							<ul type="disc">
+								<li>Child List.</li>
+								<li>Lorem, ipsum dolor.</li>
+							</ul>
+						</li>
+						<li>Lorem, ipsum dolor.</li>
+					</ul>
+				</div>
+				<div class="box-3">
+					Definition Listing
+					<dl>
+						<dt>Lorem ipsum</dt>
+						<dd>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Explicabo non sint vero quasi, minima ipsa
+							molestias laboriosam est sit doloribus.
+						</dd>
+						<dt>Lorem ipsum</dt>
+						<dd>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Dolores, corrupti?
+						</dd>
+					</dl>
+					Definition Listing
+					<dl>
+						<dt>Lorem ipsum</dt>
+						<dd>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Dolores, corrupti?
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- KUTIPAN -->
+			<h3 class="text-center mt-3">Kutipan</h3>
+			<div class="row justify-center">
+				<div class="box-4">
+					<cite>Lorem, ipsum dolor sit amet [citation].</cite>
+				</div>
+				<div class="box-4">
+					<q>Lorem, ipsum dolor sit amet [quote].</q>
+				</div>
+			</div>
+			<div class="row flex-column items-center">
+				<div class="box-8">
+					<blockquote>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Veniam, rem! [Blockquote without quote, cite or
+						figcaption]
+					</blockquote>
+				</div>
+				<div class="box-8">
+					<blockquote>
+						<q>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Veniam, rem!
+                        </q>
+						[Blockquote with element quote inside]
+					</blockquote>
+				</div>
+				<div class="box-8">
+					<blockquote>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Veniam, rem! [Blockquote with cite]
+						<cite>Lorem citation, 2020</cite>
+					</blockquote>
+				</div>
+				<div class="box-8">
+					<blockquote>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Veniam, rem! [Blockquote with figcaption]
+						<figcaption>Lorem figcaption, 2020</figcaption>
+					</blockquote>
+				</div>
+			</div>
+			<!-- TABEL -->
+			<h3 class="text-center mt-3">Tabel</h3>
+			<div class="row flex-column items-center">
+				<div class="box-8 d-flex justify-center mb-0">
+					<table class="table stripe">
+						<thead>
+							<tr>
+								<th class="column-fit">No.</th>
+								<th>Name</th>
+								<th>Email</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1.</td>
+								<td>Andri Pamungkas</td>
+								<td>andri@example.com</td>
+							</tr>
+							<tr>
+								<td>2.</td>
+								<td>Brisia Kalina</td>
+								<td>brisia@example.com</td>
+							</tr>
+							<tr>
+								<td>3.</td>
+								<td>Candra Mahatama</td>
+								<td>candra@example.com</td>
+							</tr>
+							<tr>
+								<td>4.</td>
+								<td>Duta Nagara</td>
+								<td>duta@example.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- PESAN -->
+			<h3 class="text-center mt-3">Pesan</h3>
+			<div class="row justify-center">
+				<div class="box-5">
+					<div class="alert-primary">
+						<h6 class="alert-header text-left">Alert Primary!</h6>
+						<span class="alert-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Deleniti, cum!
+                        </span>
+					</div>
+				</div>
+				<div class="box-5">
+					<div class="alert-secondary">
+						<h6 class="alert-header text-left">Alert Secondary!</h6>
+						<span class="alert-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Deleniti, cum!
+                        </span>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-center">
+				<div class="box-5">
+					<div class="alert-success">
+						<h6 class="alert-header text-left">Alert Success!</h6>
+						<span class="alert-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Deleniti, cum!
+                        </span>
+					</div>
+				</div>
+				<div class="box-5">
+					<div class="alert-danger">
+						<h6 class="alert-header text-left">Alert Danger!</h6>
+						<span class="alert-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Deleniti, cum!
+                        </span>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-center">
+				<div class="box-5">
+					<div class="alert-warning">
+						<h6 class="alert-header text-left">Alert Warning!</h6>
+						<span class="alert-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Deleniti, cum!
+                        </span>
+					</div>
+				</div>
+				<div class="box-5">
+					<div class="alert-info">
+						<h6 class="alert-header text-left">Alert Info!</h6>
+						<span class="alert-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Deleniti, cum!
+                        </span>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-center">
+<pre class="box-8 d-flex self-center codeSnap mt-2">
+//  Menggunakan class
+&lt;div class="alert-primary"&gt;
+    &lt;h6 class="alert-header text-left"&gt;
+        Alert Primary!
+    &lt;/h6&gt;
+    &lt;span class="alert-desc"&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, cum!
+    &lt;/span&gt;
+&lt;/div&gt;
+//  Opsi class lainnya alert-secondary, alert-success, alert-danger, alert-warning, alert-info
+</pre>
+			</div>
+			<!-- LENCANA -->
+			<h3 class="text-center mt-3">Lencana</h3>
+			<div class="row justify-center text-center">
+				<div class="box-2">
+					<span class="badge-primary">Badge Primary</span>
+				</div>
+				<div class="box-2">
+					<span class="badge-secondary">Badge Secondary</span>
+				</div>
+				<div class="box-2">
+					<span class="badge-success">Badge Success</span>
+				</div>
+			</div>
+			<div class="row justify-center text-center">
+				<div class="box-2">
+					<span class="badge-danger">Badge Danger</span>
+				</div>
+				<div class="box-2">
+					<span class="badge-warning">Badge Warning</span>
+				</div>
+				<div class="box-2">
+					<span class="badge-info">Badge Info</span>
+				</div>
+			</div>
+			<div class="row justify-center">
+<pre class="box-8 codeSnap mt-2">
+//  Menggunakan class
+&lt;span class="badge-primary"&gt;Badge Primary&lt;/span&gt;
+&lt;span class="badge-secondary"&gt;Badge Secondary&lt;/span&gt;
+&lt;span class="badge-success"&gt;Badge Success&lt;/span&gt;
+&lt;span class="badge-danger"&gt;Badge Danger&lt;/span&gt;
+&lt;span class="badge-warning"&gt;Badge Warning&lt;/span&gt;
+&lt;span class="badge-info"&gt;Badge Info&lt;/span&gt;
+</pre>
+			</div>
+			<!-- BREADCRUMB -->
+			<h3 class="text-center mt-3">Navigasi</h3>
+			<div class="row justify-center">
+				<div class="box-6">
+					<ul class="breadcrumb justify-center">
+						<li><a href="">Negara</a></li>
+						<li><a href="">Indonesia</a></li>
+						<li><span>Pulau</span></li>
+						<li class="active"><span>Jawa</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- KARTU -->
+			<h3 class="text-center mt-3">Kartu</h3>
+			<div class="row justify-center">
+				<div class="box-3">
+					<div class="card-primary">
+						<h6 class="text-left">Card Primary</h6>
+						<p class="text-left">
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Consectetur dolor ex sapiente odio, ea
+							aliquid.
+						</p>
+					</div>
+				</div>
+				<div class="box-3">
+					<div class="card-secondary">
+						<h6 class="text-left">Card Secondary</h6>
+						<p class="text-left">
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Consectetur dolor ex sapiente odio, ea
+							aliquid.
+						</p>
+					</div>
+				</div>
+				<div class="box-3">
+					<div class="card-success">
+						<h6 class="text-left">Card Success</h6>
+						<p class="text-left">
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Consectetur dolor ex sapiente odio, ea
+							aliquid.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-center">
+				<div class="box-3">
+					<div class="card-warning">
+						<h6 class="text-left">Card Warning</h6>
+						<p class="text-left">
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Consectetur dolor ex sapiente odio, ea
+							aliquid.
+						</p>
+					</div>
+				</div>
+				<div class="box-3">
+					<div class="card-danger">
+						<h6 class="text-left">Card Danger</h6>
+						<p class="text-left">
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Consectetur dolor ex sapiente odio, ea
+							aliquid.
+						</p>
+					</div>
+				</div>
+				<div class="box-3">
+					<div class="card-info">
+						<h6 class="text-left">Card Info</h6>
+						<p class="text-left">
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Consectetur dolor ex sapiente odio, ea
+							aliquid.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-center">
+<pre class="box-8 d-flex self-center codeSnap mt-2">
+//  Menggunakan class
+&lt;div class="card-primary"&gt;
+    &lt;h6&gt;Card Primary!&lt;/h6&gt;
+    &lt;p&gt;
+        Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Consectetur dolor ex sapiente odio, ea aliquid.
+    &lt;/p&gt;
+&lt;/div&gt;
+//  Opsi class lainnya card-secondary, card-success, card-danger, card-warning, card-info
+</pre>
+			</div>
+		</div>
+		<footer class="bg-light pt-2 pb-6">
+			<div class="container text-center">
+				<div class="row flex-column justify-between">
+					<div class="box-12 mb-0">
+						<img
+							class="logo mx-auto mb-2"
+							src="./assets/img/frastyle-logo.png"
+							alt="Logo Frastyle CSS Framework"
+							style="filter: grayscale(1) opacity(0.35)"
+						/>
+						<p class="m-0">
+							SIMVLE Theme - Kode sumber dibawah <a href="https://github.com/frastyle/simvle-theme/blob/main/LICENSE">lisensi MIT</a>.
+							Konten dalam website dibawah lisensi
+							<a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>.
+						</p>
+						<p>
+							&copy; 2020-2021 <a href="https://github.com/frastyle">Frastyle Framework</a>. Dibuat dan
+							didesain oleh <a href="https://github.com/bagasnur">@bagasnur</a> di
+							Indonesia.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

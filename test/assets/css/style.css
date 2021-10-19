@@ -1,0 +1,54 @@
+.logo {
+	display: flex;
+	height: 2em;
+	filter: brightness(100);
+}
+.navbar {
+	width: 100%;
+	padding: 1.5em 0;
+	z-index: 100;
+}
+.linkNavbar {
+	align-self: center;
+}
+.linkNavbar a {
+	color: var(--white);
+	text-decoration: none;
+	margin-right: 2em;
+	padding: 0.5em 0;
+	font-weight: 500;
+}
+.linkNavbar a:hover,
+.linkNavbar a.active {
+	color: var(--white);
+}
+.linkNavbar a.active {
+	border-bottom: var(--white) solid 2px;
+}
+.linkNavbar a:last-child {
+	margin: 0;
+}
+.gradient-blue {
+	background: linear-gradient(90deg, #3c71dd, #209fdf);
+}
+.header {
+	margin-top: -80px;
+}
+.header p {
+	font-size: 1.5rem;
+}
+pre.codeSnap {
+	--bg-code: var(--dark-1);
+	--text-code: var(--light);
+}
+.download-pane {
+	background: var(--white);
+	border-top: 1px solid var(--dark);
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	bottom: 0;
+	z-index: 10;
+}
